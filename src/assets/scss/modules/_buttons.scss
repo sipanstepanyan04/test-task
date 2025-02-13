@@ -25,6 +25,7 @@
 
     &.icon-btn {
         font-size: 24px;
+        flex-shrink: 0;
     }
 }
 
@@ -38,7 +39,7 @@
 }
 
 @media (max-width: $screen-md) {
-    .btn {
+    .btn:not(.icon-btn) {
         min-height: 34px;
         font-size: $font-size-xs;
         line-height: 1;

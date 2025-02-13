@@ -3,7 +3,6 @@ header {
     position: absolute;
     top: space(7);
     left: 0;
-    padding: 0 space(4);
     z-index: 3;
 
     [class^="icon-"],
@@ -151,6 +150,14 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+@media (max-width: $screen-lg) {
+    header {
+        .menu {
+            gap: space(3);
         }
     }
 }

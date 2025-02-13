@@ -54,3 +54,9 @@
         }
     }
 }
+
+@media (max-width: $screen-md) {
+    .how-to-use {
+        padding-top: space(10);
+    }
+}
