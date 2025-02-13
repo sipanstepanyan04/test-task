@@ -1,0 +1,101 @@
+.recent-blog {
+    padding-top: space(20);
+    padding-bottom: space(20);
+    margin-bottom: space(26);
+
+    .recent-blog-content {
+        text-align: center;
+        margin-bottom: space(12);
+    }
+
+    .section-title {
+        margin-bottom: space(4);
+    }
+
+    .blog-posts {
+        display: flex;
+        gap: space(6);
+    }
+
+    .blog-post-item {
+        flex: 1;
+        border-radius: $br-md;
+        overflow: hidden;
+        box-shadow: $box-shadow;
+    }
+
+    .blog-post-item-content {
+        padding: space(8) space(4) space(7);
+    }
+
+    .blog-post-image {
+        font-size: 0;
+        box-shadow: $box-shadow;
+
+        img {
+            max-width: 100%;
+            font-size: 0;
+        }
+    }
+
+    .blog-post-title {
+        color: $color-dark;
+        font-size: $font-size-lg;
+        line-height: 1.5;
+        text-transform: uppercase;
+        margin-bottom: space(2);
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .blog-post-text {
+        margin-bottom: space(6);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+
+    .blog-post-read-more {
+        color: $color-primary-dark;
+        text-decoration: underline;
+        font-size: $font-size-lg;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .recent-blog {
+        padding-top: space(10);
+        padding-bottom: space(10);
+        margin-bottom: space(30);
+
+        .recent-blog-content {
+            margin-bottom: space(8);
+        }
+
+        .section-title {
+            margin-bottom: space(3);
+        }
+
+        .blog-posts {
+            flex-direction: column;
+        }
+
+        .blog-post-item-content {
+            padding: space(6) space(4);
+        }
+    }
+}

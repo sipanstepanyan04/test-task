@@ -1,0 +1,27 @@
+.download-app-icons {
+    margin-top: space(3);
+
+    a {
+        display: inline-block;
+        max-width: 149px;
+        font-size: 0;
+
+        + a {
+            margin-left: space(3);
+        }
+
+        img {
+            width: 100%;
+            font-size: 0;
+        }
+    }
+
+    @media (max-width: $screen-md) {
+        a {
+            max-width: 110px;
+            + a {
+                margin-left: space(2);
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.download-app-section {
+    padding-top: space(20);
+
+    .download-app-wrapper {
+        display: flex;
+        gap: space(6);
+    }
+
+    .download-app-content {
+        flex: 1;
+    }
+
+    .download-app-icons {
+        margin-top: space(12);
+    }
+
+    .download-app-image {
+        flex: 1;
+        text-align: right;
+
+        img {
+            max-width: 100%;
+            font-size: 0;
+        }
+    }
+
+    .download-app-statistics {
+        display: flex;
+        gap: space(6);
+        margin-top: space(12);
+
+        .download-app-statistic-item {
+            @extend %flex-column-center;
+            flex: 1;
+            background-color: $color-primary;
+            border-radius: $br-md;
+            box-shadow: $box-shadow;
+            padding: space(6) space(2) space(4) space(2);
+            color: $color-text-light;
+            gap: space(3);
+            font-weight: 600;
+
+            .statistic-icon {
+                font-size: 35px;
+            }
+
+            .statistic-count {
+                font-size: $font-size-xl;
+                line-height: 25px;
+            }
+
+            .statistic-name {
+                font-size: $font-size-lg;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .download-app-section {
+        padding-top: space(10);
+        padding-bottom: space(10);
+
+        .download-app-icons {
+            margin-top: space(10);
+        }
+
+        .download-app-wrapper {
+            flex-direction: column;
+            gap: space(12);
+        }
+
+        .download-app-statistics {
+            gap: space(3);
+            margin-top: space(10);
+
+            .download-app-statistic-item {
+                padding: space(1);
+                gap: space(2);
+
+                .statistic-icon {
+                    font-size: 18px;
+                }
+
+                .statistic-name {
+                    font-size: $base-font-size;
+                    line-height: 1.5;
+                }
+
+                .statistic-count {
+                    font-size: $font-size-lg;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .download-app-image {
+            text-align: center;
+        }
+    }
+}

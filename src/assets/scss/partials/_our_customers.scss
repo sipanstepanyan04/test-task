@@ -1,0 +1,99 @@
+.our-customers {
+    padding-top: space(20);
+    padding-bottom: space(32);
+    background-image: url("../../img/our_customers_banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .section-title {
+        margin-bottom: space(4);
+    }
+
+    .our-customers-text {
+        color: $color-text-light;
+        text-align: center;
+    }
+
+    .cusomers-slider {
+        margin-top: space(15);
+
+        .cusomers-slider-item {
+            background-color: $color-text-light;
+            padding: space(8) space(8) space(4);
+            border-radius: $br-md;
+            box-shadow: $box-shadow-lg;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transform: scale(0.92);
+            transition: transform $trns-duration;
+        }
+
+        .slick-center {
+            .cusomers-slider-item {
+                transform: scale(1);
+            }
+        }
+
+        .customer-image {
+            font-size: 0;
+            max-width: 96px;
+            margin-bottom: space(4);
+
+            img {
+                max-width: 100%;
+                font-size: 0;
+            }
+        }
+
+        .customer-name {
+            font-size: $font-size-2xl;
+            line-height: 1.5;
+            color: $color-dark;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .customer-position {
+            font-size: $font-size-lg;
+            line-height: 1.5;
+            color: $color-dark;
+            font-weight: 600;
+            margin-bottom: space(2);
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .our-customers {
+        padding-top: space(10);
+        padding-bottom: space(17);
+
+        .cusomers-slider {
+            margin-top: space(8);
+
+            .cusomers-slider-item {
+                padding: space(5) space(3);
+            }
+
+            .customer-image {
+                max-width: 50px;
+                margin-bottom: space(3);
+            }
+
+            .customer-name {
+                font-size: $font-size-xl;
+                font-weight: 600;
+            }
+
+            .customer-position {
+                font-size: $base-font-size;
+                font-weight: 400;
+                margin-bottom: space(4);
+            }
+        }
+    }
+}

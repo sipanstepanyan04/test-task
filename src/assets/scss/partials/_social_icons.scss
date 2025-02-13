@@ -1,0 +1,38 @@
+.social-icons {
+    display: flex;
+    color: $color-dark;
+    gap: space(6);
+
+    &.social-icons-color-inverted {
+        color: $color-text-light;
+
+        .social-icons-separator {
+            background-color: $color-text-light;
+        }
+    }
+
+    .social-icons-separator {
+        width: 1px;
+        background-color: $color-text;
+    }
+
+    .social-icons-item {
+        line-height: 1;
+        font-size: 0;
+        transition: color $trns-duration;
+        will-change: color;
+
+        a {
+            display: inline-block;
+        }
+
+        [class^="icon-"],
+        [class*=" icon-"] {
+            font-size: 24px;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+}

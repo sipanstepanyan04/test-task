@@ -1,0 +1,60 @@
+//paths
+$fonts-folder: "~/src/assets/fonts/icons";
+$images-folder: "../img/";
+
+//fonts
+$font-primary: "Josefin Sans", serif;
+$font-icons: "Icomoon";
+
+//color
+$color-primary: #5956e9;
+$color-primary-light: #7572ff;
+$color-primary-dark: #5851ea;
+$color-dark: #232233;
+$color-warning: #e44c23;
+
+// Box shadow
+$box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+$box-shadow-lg: 0px 10px 100px 0px rgba(0, 0, 0, 0.239);
+
+//Descriptive Base Colors
+$color-text: #6c6c72;
+$color-text-light: #fff;
+
+//Text
+$base-font-size: 16px;
+$font-size-xs: 10px;
+$font-size-sm: 12px;
+$font-size-lg: 20px;
+$font-size-xl: 25px;
+$font-size-2xl: 31px;
+$font-size-3xl: 38px;
+$font-size-4xl: 48.83px;
+$btn-font-size: 20px;
+
+// Spaces
+$space-k: 5px;
+
+//Border Radiuses
+$br-default: 5px;
+$br-md: 10px;
+$br-lg: 30px;
+$br-rounded: 50%;
+$br-none: 0;
+
+// Transitions
+$trns-duration: 0.3s;
+$trns-duration-lg: 1s;
+$trns-delay: 50ms;
+
+//container
+$cont-width: 1170px;
+$cont-width-sm: 600px;
+$cont-padding: 32px;
+
+//Resolutions
+$screen-lg: 1280px;
+$screen-md: 1024px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+$screen-xxs: 360px;

@@ -1,0 +1,102 @@
+.our-team {
+    padding-top: space(20);
+    padding-bottom: space(20);
+
+    .how-to-use-video-placeholder {
+        max-width: 770px;
+        aspect-ratio: 3.2;
+    }
+
+    .our-team-content {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+
+        .section-title {
+            margin-bottom: space(4);
+        }
+    }
+
+    .team-members-section {
+        margin-top: space(12);
+        display: flex;
+        gap: space(6);
+    }
+
+    .team-member {
+        flex: 1;
+        border-radius: $br-md;
+        box-shadow: $box-shadow;
+        padding: space(4) space(4) space(10) space(4);
+        @extend %flex-column-center;
+
+        .team-member-image {
+            max-width: 198px;
+            font-size: 0;
+            margin-bottom: space(13);
+            position: relative;
+
+            &::before {
+                position: absolute;
+                inset: space(-2);
+                content: "";
+                border-radius: 50%;
+                background-image: url(../../img//dashed-border.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            img {
+                max-width: 100%;
+                font-size: 0;
+                border-radius: 50%;
+            }
+        }
+
+        .team-member-name {
+            font-size: $font-size-2xl;
+            line-height: 1.5;
+            color: $color-dark;
+            font-weight: 700;
+        }
+
+        .team-member-position {
+            font-size: $font-size-lg;
+            line-height: 1.5;
+            margin-bottom: space(3);
+        }
+
+        .team-member-text {
+            text-align: center;
+        }
+
+        .social-icons {
+            margin-top: space(8);
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .our-team {
+        padding-top: space(10);
+        padding-bottom: space(10);
+
+        .our-team-content {
+            .section-title {
+                margin-bottom: space(3);
+            }
+        }
+
+        .team-members-section {
+            margin-top: space(8);
+            flex-direction: column;
+            padding: space(6) space(3) space(10) space(3);
+        }
+
+        .team-member {
+            .social-icons {
+                margin-top: space(6);
+            }
+        }
+    }
+}

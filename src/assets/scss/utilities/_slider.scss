@@ -1,0 +1,39 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.slick-dots {
+    bottom: space(-16);
+
+    li {
+        button {
+            width: 16px;
+            height: 16px;
+            background-color: $color-text-light;
+            border-radius: $br-rounded;
+
+            &::before {
+                content: none;
+            }
+        }
+
+        &.slick-active {
+            button {
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    inset: -2px;
+                    content: "";
+                    border: 0.5px solid $color-text-light;
+                    border-radius: $br-rounded;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .slick-dots {
+        bottom: space(-7);
+    }
+}

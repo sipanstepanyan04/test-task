@@ -1,0 +1,47 @@
+.btn {
+    text-decoration: none;
+    @extend %flex-center;
+    font-weight: 600;
+    font-size: $btn-font-size;
+    line-height: 1.5;
+    background-color: $color-primary;
+    border-radius: $br-default;
+    color: $color-text-light;
+    min-height: 50px;
+    padding: space(1) space(3);
+    border: none;
+    cursor: pointer;
+    transition: background-color $trns-duration;
+    will-change: background-color;
+    font-family: $font-primary;
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
+
+    &.sm {
+        min-height: 46px;
+    }
+
+    &.icon-btn {
+        font-size: 24px;
+    }
+}
+
+.hamburger-btn {
+    all: unset;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    color: $color-dark;
+}
+
+@media (max-width: $screen-md) {
+    .btn {
+        min-height: 34px;
+        font-size: $font-size-xs;
+        line-height: 1;
+        padding: space(1);
+    }
+}

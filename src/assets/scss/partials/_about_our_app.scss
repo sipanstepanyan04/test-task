@@ -1,0 +1,91 @@
+.about-our-app {
+    padding-top: space(20);
+    padding-bottom: space(20);
+
+    .about-our-app-top {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            margin-bottom: space(4);
+        }
+    }
+
+    .about-our-app-content {
+        margin-top: space(12);
+        display: flex;
+        gap: space(6);
+
+        .about-our-app-image {
+            flex: 1;
+            img {
+                max-width: 100%;
+                font-size: 0;
+            }
+        }
+
+        .about-our-app-content-articles {
+            @extend %flex-column-center;
+            flex: 1;
+            gap: space(6);
+
+            article {
+                display: flex;
+                border-radius: $br-md;
+                box-shadow: $box-shadow;
+                padding: 30px 20px;
+                gap: space(3);
+
+                .article-avatar {
+                    flex-shrink: 0;
+
+                    [class^="icon-"],
+                    [class*=" icon-"] {
+                        color: $color-primary;
+                        font-size: 24px;
+                    }
+                }
+
+                .article-title {
+                    font-size: $font-size-lg;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $color-dark;
+                    margin-bottom: space(3);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-md) {
+    .about-our-app {
+        padding-top: space(10);
+        padding-bottom: space(10);
+
+        .about-our-app-content {
+            flex-direction: column;
+            gap: space(8);
+
+            .about-our-app-image {
+                text-align: center;
+                padding: space(1);
+                max-width: 238px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .about-our-app-content-articles {
+                gap: space(4);
+
+                article {
+                    .article-title {
+                        margin-bottom: space(1);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.form-control {
+    position: relative;
+    .icon-btn {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+    }
+}
+
+.text-field {
+    background: $color-text-light;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-family: $font-primary;
+    height: 50px;
+    width: 100%;
+    display: block;
+    color: $color-dark;
+    font-size: $base-font-size;
+    transition: all $trns-duration;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0 space(3);
+    border-radius: $br-default;
+
+    &::placeholder {
+        color: $color-text;
+    }
+}
